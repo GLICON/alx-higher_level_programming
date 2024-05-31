@@ -3,7 +3,7 @@
 0-rectangle: class Rectangle
 """
 
-class Rectangle:
 
+class Rectangle:
     """Empty class"""
     pass
