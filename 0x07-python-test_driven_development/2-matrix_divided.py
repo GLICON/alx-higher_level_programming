@@ -1,14 +1,17 @@
 #!/usr/bin/python3
+
 """
-Matrix division
+Task 2-matrix_divided
+
 """
 
 def matrix_divided(matrix, div):
     """Return new matrix with dividend"""
+
     message = "matrix must to be a matrix (list of lists) of integers/floats"
     message_one = "Each row of the matrix must have the same size"
 
-    if type(matrix) is not list or len(matrix) == 0 or len(matrix|0|) == 0:
+    if type(matrix) is not list or len(matrix) == 0 or len(matrix[0]) == 0:
         raise TypeError(message)
     for rows in matrix:
         if type(rows) is not list:
@@ -16,7 +19,7 @@ def matrix_divided(matrix, div):
         for i in rows:
             if type(i) is not int and type(i) is not float:
                 raise TypeError(message)
-    samelen = len(matrix|0|)
+    samelen = len(matrix[0])
     for row in matrix:
         if samelen != len(row):
             raise TypeError(message_one)
