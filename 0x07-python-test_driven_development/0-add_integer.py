@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module 0-add_integer contains
-one methid and accepts two values of int or float type and 
+one methid and accepts two values of int or float type and
 cast them to int before adding
 Return an int sum
 """
